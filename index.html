@@ -4,24 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/output.css">
+    <link rel="stylesheet" href="index.css">
     <title>Document</title>
 </head>
 
 
 <body class="bg-[#03178C] ">
-    <div class="flex justify-around items-center">
+    <div class="flex justify-around items-center flex-col md:flex-row mx-5">
         <div>
-            <img src="src/images/logo4.png" alt="logo" class=" h-60">
+            <img src="src/images/logo2.png" alt="logo" class=" h-52">
         </div>
-        <div>
-            <ul class="flex justify-center items-center bg-blue-900  rounded-md text-white font-extrabold ">
-                <li class="hover:bg-blue-800 p-5">What</li>
-                <li class="hover:bg-blue-800 p-5">Expertise</li>
-                <li class="hover:bg-blue-800 p-5">Our Offerings</li>
-                <li class="hover:bg-blue-800 p-5">Why</li>
-                <li class="hover:bg-blue-800 p-5">Get Started</li>
+        <div class="hidden lg:block"> 
+            <ul class="flex justify-center flex-wrap items-center bg-blue-900 lg:gap-5 gap-2 rounded-xl text-white font-semibold ">
+                <li class="hover:bg-blue-800 lg:p-5 rounded-xl">What</li>
+                <li class="hover:bg-blue-800 lg:p-5 rounded-xl">Team</li>
+                <li class="hover:bg-blue-800 lg:p-5 rounded-xl">Our Offerings</li>
+                <li class="hover:bg-blue-800 lg:p-5 rounded-xl">Why</li>
+                <li class="hover:bg-blue-800 lg:p-5 rounded-xl">That's What They Said  </li>
+                <li class="hover:bg-blue-800 lg:p-5 rounded-xl">Get Started</li>
             </ul>
         </div>
+    </div>
+    <div class=" mx-10 lg:mx-40 pt-15 md:pt-10 pb-10">
+        <p class="text-pink-100 font-extrabold sm:text-[50px] text-[40px]">We're Michael Scott <span class="text-red-600">Digital Company.</span></p>
+        <p class="text-pink-200 font-bold text-3xl">We create software that make your users 'wow!'</p>
+        <p class="text-pink-50 font-semibold tracking-wide pt-10 text-[20px] leading-10">At Michael Scott Digital Company, we seamlessly blend innovation, efficiency and expertise to not just meet but exceed your expectations.
+        Simply put, we specialize in delivering cutting-edge digital solutions. If you crave shipping speed combined with peak
+        performance and stunning design in your software, you're in the right hands.</p>
+    </div>
+    <div class="flex justify-around bg-blue-600 my-10 shadow-lg shadow-green-400 text-red-600 text-xl font-bold">
+        <a href="" class="py-8">Start Your Project Right Now!</a>
+        <a href="" class="py-8">Start Your Project Right Now!</a>
+        <a href="" class="py-8 hidden md:block">Start Your Project Right Now!</a>
+        <a href="" class="py-8 hidden sm:block">Start Your Project Right Now!</a>
     </div>
 </body>
 </html>
