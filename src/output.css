@@ -683,6 +683,18 @@ video {
   margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
+.overflow-scroll {
+  overflow: scroll;
+}
+
+.overflow-y-scroll {
+  overflow-y: scroll;
+}
+
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -1011,6 +1023,10 @@ video {
     display: block;
   }
 
+  .md\:w-80 {
+    width: 20rem;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1053,6 +1069,10 @@ video {
 
   .lg\:w-96 {
     width: 24rem;
+  }
+
+  .lg\:w-80 {
+    width: 20rem;
   }
 
   .lg\:flex-row {

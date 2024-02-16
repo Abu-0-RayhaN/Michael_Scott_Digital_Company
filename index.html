@@ -28,10 +28,10 @@
             <div class="hidden lg:block">
                 <ul
                     class="flex justify-center flex-wrap items-center bg-blue-900 lg:gap-5 gap-2 rounded-xl font-bold text-white ">
-                    <li class="hover:bg-blue-800 lg:p-5 rounded-xl "><a href="">What</a></li>
-                    <li class="hover:bg-blue-800 lg:p-5 rounded-xl"><a href="">Our Offerings</a></li>
-                    <li class="hover:bg-blue-800 lg:p-5 rounded-xl"><a href="">Why</a></li>
-                    <li class="hover:bg-blue-800 lg:p-5 rounded-xl"><a href="">Get Started</a></li>
+                    <li class="hover:bg-blue-800 lg:p-5 rounded-xl "><a href="#what">What</a></li>
+                    <li class="hover:bg-blue-800 lg:p-5 rounded-xl"><a href="#Offerings">Our Offerings</a></li>
+                    <li class="hover:bg-blue-800 lg:p-5 rounded-xl"><a href="#why">Why</a></li>
+                    <li class="hover:bg-blue-800 lg:p-5 rounded-xl"><a href="#getStarted">Get Started</a></li>
                     <li class="hover:bg-blue-800 lg:p-5 rounded-xl font-bold">That's What They Said </li>
                 </ul>
             </div>
@@ -68,16 +68,15 @@
            <div class="flex flex-col gap-10">
             <div class="flex flex-col lg:flex-row gap-10">
                 <div class="w-full lg:w-1/2 border-2 border-red-500  flex flex-col gap-3 sm:flex-row p-5 hover:border-green-500">
-                    <div class="flex items-center justify-center "><img src="src/images/app.png" alt="" class="rounded-full h-32 w-80"></div>
+                    <div class="flex items-center justify-center "><img src="src/images/app.png" alt="" class="rounded-full h-32 md:w-80 w-60 "></div>
                     <div>
                         <h2 class="text-[30px] font-extrabold text-pink-50 text-center lg:text-left font-monts">Landing Page</h2>
-                        <p class="text-center lg:text-left text-pink-100 font-noto">Bring your business vision to life! We specialize in constructing the features you need, using our
-                            proficiency in
-                            creating fast and reliable web applications.</p>
+                        <p class="text-center lg:text-left text-pink-100 font-noto">Elevate your brand with our landing page expertise. We specialize in crafting fast, reliable web applications,
+                        constructing tailored features to bring your business vision to vibrant online life.</p>
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2 border-2 border-blue-500 flex flex-col gap-3 sm:flex-row p-5 hover:border-yellow-500">
-                    <div class="flex items-center justify-center"><img src="src/images/web.png" alt="" class="rounded-full h-32 w-80 "></div>
+                    <div class="flex items-center justify-center"><img src="src/images/web.png" alt="" class="rounded-full h-32 md:w-80 w-60  "></div>
                     <div>
                         <h2 class="text-[30px] font-extrabold text-pink-50 text-center lg:text-left font-monts">Web Apps</h2>
                         <p class="text-center lg:text-left text-pink-100 font-noto">Bring your business vision to life! We specialize in
@@ -89,22 +88,19 @@
             </div>
             <div class="flex flex-col lg:flex-row gap-10">
             <div class="w-full lg:w-1/2 border-2 border-green-500 flex flex-col gap-3 sm:flex-row p-5 hover:border-blue-600">
-                <div class="flex items-center justify-center"><img src="src/images/videot.png" alt="" class="rounded-full h-32 w-80"></div>
+                <div class="flex items-center justify-center"><img src="src/images/videot.png" alt="" class="rounded-full h-32 md:w-80 w-60 "></div>
                 <div>
                     <h2 class="text-[30px] font-extrabold text-pink-50 text-center lg:text-left font-monts">Video Editing</h2>
-                    <p class="text-center lg:text-left text-pink-100 font-noto">Bring your business vision to life! We specialize in
-                        constructing the features you need, using our
-                        proficiency in
-                        creating fast and reliable web applications.</p>
+                    <p class="text-center lg:text-left text-pink-100 font-noto">Transform your content with our video editing expertise. We enhance footage, ensuring a captivating narrative through
+                    seamless edits, effects, and professional post-production, bringing your vision to cinematic life.</p>
                 </div>
             </div>
             <div class="w-full lg:w-1/2 border-2 border-yellow-500 flex flex-col gap-3 sm:flex-row p-5 hover:border-red-500">
-                <div class="flex items-center justify-center"><img src="src/images/graphics.png" alt="" class="rounded-full h-32 w-80"></div>
+                <div class="flex items-center justify-center"><img src="src/images/graphics.png" alt="" class="rounded-full h-32 md:w-80 w-60 "></div>
                  <div>
                         <h2 class="text-[30px] font-extrabold text-pink-50 text-center lg:text-left font-monts">Graphic Design</h2>
-                        <p class="text-center lg:text-left  text-pink-100 font-noto">Bring your business vision to life! We specialize in constructing the features you need, using our
-                            proficiency in
-                            creating fast and reliable web applications.</p>
+                        <p class="text-center lg:text-left  text-pink-100 font-noto">Elevate your brand with our graphics design. We create visually striking solutions, blending creativity and precision to
+                        deliver impactful designs that resonate and strengthen your identity.</p>
                     </div>
             </div>
             </div>
@@ -250,5 +246,29 @@
         </div>
         <!-- Footer Section Ends here  -->
     </div>
+
+
+   <script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Add smooth scrolling behavior to all internal links with hash fragments
+        const internalLinks = document.querySelectorAll('a[href^="#"]');
+
+        internalLinks.forEach(link => {
+            link.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+</script>
 </body>
 </html>
